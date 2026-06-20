@@ -137,18 +137,6 @@ The build files will be generated inside the `build` folder.
 
 ---
 
-## 🌐 Live Demo
-
-🔗 **Live Application:** Add your deployment link here
-
-Example:
-
-```text
-https://your-project.vercel.app
-```
-
----
-
 ## 🎯 Learning Outcomes
 
 This project helped strengthen understanding of:
@@ -183,13 +171,7 @@ This project helped strengthen understanding of:
 Computer Science Engineering Student
 Frontend Developer | React Enthusiast | UI/UX Explorer
 
-GitHub: https://github.com/your-username
-
----
-
-## ⭐ Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
+GitHub: https://github.com/DhanushyaS01
 
 ---
 
