@@ -1,0 +1,111 @@
+.homepage {
+  min-height: 100vh;
+}
+
+.cat-item {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.cat-item:hover { transform: scale(1.08); }
+
+.cat-circle {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  border: 2px solid rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s;
+}
+.cat-item:hover .cat-circle {
+  box-shadow: 0 4px 16px rgba(252,128,25,0.28);
+}
+.cat-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Dineout */
+.dineout-card {
+  flex-shrink: 0;
+  width: 220px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #fff;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.dineout-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
+}
+.dineout-img {
+  height: 140px;
+  overflow: hidden;
+}
+.dineout-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.dineout-card:hover .dineout-img img { transform: scale(1.06); }
+.dineout-body { padding: 10px 12px 14px; }
+.dineout-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dineout-info {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 2px;
+}
+.dineout-cost {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+
+.grocery-card {
+  flex-shrink: 0;
+  width: 150px;
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.25s, box-shadow 0.25s;
+  text-align: center;
+}
+.grocery-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.grocery-emoji { font-size: 44px; }
+.grocery-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.grocery-time {
+  font-size: 11px;
+  color: var(--text-muted);
+}
