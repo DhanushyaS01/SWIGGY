@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Ordering System</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <style>
+    .hero {
+      background: url('images/hero-bg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 30px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      font-size: 1.1rem;
+      padding: 12px 25px;
+      background: #ff7300;
+      border: none;
+      border-radius: 6px;
+    }
+
+    .steps {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .steps div {
+      max-width: 250px;
+    }
+
+    .steps h3 {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .steps {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header class="navbar">
+    <img src="images/swiggylogo.png" class="logo" alt="Swiggy Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="pages/menu.html">Menu</a>
+      <a href="pages/cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="pages/about-us.html">About Us</a>
+      <a href="pages/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  
+  <section class="hero">
+    <h1>Delicious food, delivered to you</h1>
+    <p>Order from your favorite restaurants with lightning-fast delivery</p>
+    <button onclick="window.location.href='pages/menu.html'">Order Now</button>
+  </section>
+
+
+  <section class="steps">
+    <div>
+      <img src="images/search.png" width="80" />
+      <h3>Search your craving</h3>
+      <p>Find what you love from hundreds of dishes.</p>
+    </div>
+    <div>
+      <img src="images/delivery.png" width="80" />
+      <h3>Place your order</h3>
+      <p>Easy ordering and fast checkout process.</p>
+    </div>
+    <div>
+      <img src="images/eat.png" width="80" />
+      <h3>Enjoy your food</h3>
+      <p>Delivered hot and fresh to your doorstep.</p>
+    </div>
+  </section>
+
+  <script src="assets/script.js"></script>
+  <script>updateCartBadge();</script>
+</body>
+</html>
